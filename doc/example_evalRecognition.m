@@ -47,16 +47,10 @@ repInfo.gestureName = categorical({'waveIn'});
 repInfo.groundTruth = false(1, 1000); % 1000 xq 200 Hz por 5 segundos
 repInfo.groundTruth(200:400) = true;
 
-plot(repInfo.groundTruth)
-
 
 %% predicción
 response.vectorOfLabels = categorical({'noGesture', 'noGesture', 'noGesture', 'waveIn', 'waveIn', 'noGesture'});
 response.vectorOfTimePoints = [40 200 300 600 800 999]; %1xw double (entero)
-
-
-response.vectorOfLabels = categorical({'noGesture'});
-response.vectorOfTimePoints = [999]; %1xw double (entero)
 
 
 % con un tic toc.
@@ -70,4 +64,6 @@ response.class = categorical({'waveIn'}); % adivinamos q es waveIn
 r1 = evalRecognition(repInfo, response)
 
 
+%% plotting this repetition results
+r1.plotResults()
 

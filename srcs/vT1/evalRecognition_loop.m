@@ -1,5 +1,5 @@
 function [results, confusion, tiempos] = evalRecognition_loop(responses,...
-    privInfo, userGroup, repGroup)
+    privInfo, userGroup, repGroup, opts)
 %evalRecognition_loop evaluates a set of users with their repetitions. It returns the
 %results in a struct per user. Change this file only when the format of the
 %submission file is changed.
@@ -42,8 +42,12 @@ switch nargin
     case 2
         userGroup = 'testing';
         repGroup = 'testing';
+        opts = struct();
     case 3
         repGroup = 'testing';
+        opts = struct();
+    case 4
+        opts = struct();
 end
 
 usersTestList = fieldnames(responses.(repGroup));
@@ -87,7 +91,7 @@ for kI = usersTestList'
         repInfo.gestureName = userRepInfo{kRep, 2};
         repInfo.groundTruth = userRepInfo{kRep, 4};
         
-        repEval = evalRecognition(repInfo, resp);
+        repEval = evalRecognition(repInfo, resp, opts);
         
         results.(kUser)(kRep, :) = [repEval.classResult, ...
             repEval.recogResult, repEval.overlappingFactor];

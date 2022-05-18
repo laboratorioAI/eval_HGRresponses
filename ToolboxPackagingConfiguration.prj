@@ -1,16 +1,16 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration build-checksum="1585905035" file="C:\Users\ztjona!\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses\ToolboxPackagingConfiguration.prj" location="C:\Users\ztjona!\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="1585905035" file="C:\Users\z_tja\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses\ToolboxPackagingConfiguration.prj" location="C:\Users\z_tja\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>eval_HGRresponses</param.appname>
     <param.authnamewatermark>Jonathan A. Zea</param.authnamewatermark>
     <param.email>jonathan.a.zea@ieee.org</param.email>
-    <param.company />
+    <param.company>Lab. de Inteligencia y Visión Artificial</param.company>
     <param.summary>Hand Gesture Recognition model evaluator of EMG signals. See website for more information.</param.summary>
     <param.description>This toolbox evaluates the responses of a Hand Gesture Recognition model for both a unique repetition, or a full set of repetitions and users.
 Load EMG signals (view example_loadEMG).
 Evaluates a repetition (view example_evalARepetition).
 Evaluate submissions over training user group and testing user group, generate results, graphs and tex (view example_evalATrainingSet).</param.description>
-    <param.screenshot>${PROJECT_ROOT}\lksjyrtlk.png</param.screenshot>
-    <param.version>1.02</param.version>
+    <param.screenshot />
+    <param.version>2.5</param.version>
     <param.output>${PROJECT_ROOT}\eval_HGRresponses.mltbx</param.output>
     <param.products.name />
     <param.products.id />
@@ -70,26 +70,7 @@ resultsHGR/responseExp4S_x8/summary.txt
 resultsHGR/responseExp4S_x8/tiempos.fig
 resultsHGR/responseExp4S_x8/tiempos.png</param.exclude.filters>
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
-    <param.examples>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;examples&gt;
-   &lt;exampleCategory name="example_evalATrainingSet"&gt;
-      &lt;example name="evaluatingATrainingSet" type="html"&gt;
-         &lt;file type="source"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet.html&lt;/file&gt;
-         &lt;file type="main"&gt;/doc/example_evalATrainingSet/evaluatingATrainingSet.m&lt;/file&gt;
-         &lt;file type="thumbnail"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_01.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_02.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_03.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_04.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_05.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_06.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_07.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_08.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_09.png&lt;/file&gt;
-         &lt;file type="image"&gt;/doc/example_evalATrainingSet/html/evaluatingATrainingSet_10.png&lt;/file&gt;
-      &lt;/example&gt;
-   &lt;/exampleCategory&gt;
-&lt;/examples&gt;</param.examples>
+    <param.examples />
     <param.demosxml />
     <param.apps />
     <param.registered.apps />
@@ -97,7 +78,7 @@ resultsHGR/responseExp4S_x8/tiempos.png</param.exclude.filters>
     <param.getting.started.guide>${PROJECT_ROOT}\doc\GettingStarted.mlx</param.getting.started.guide>
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
-    <param.exported.on.package>false</param.exported.on.package>
+    <param.exported.on.package>true</param.exported.on.package>
     <param.required.addons />
     <param.matlab.project.id>8cae8314-771f-47d2-b081-11d660d44510</param.matlab.project.id>
     <param.matlab.project.name>eval_HGRresponses</param.matlab.project.name>
@@ -116,18 +97,19 @@ resultsHGR/responseExp4S_x8/tiempos.png</param.exclude.filters>
     <param.additional.sw.linux.url />
     <unset>
       <param.company />
+      <param.screenshot />
       <param.output />
       <param.products.name />
       <param.products.id />
       <param.products.version />
       <param.platforms />
       <param.exclude.pcodedmfiles />
+      <param.examples />
       <param.demosxml />
       <param.apps />
       <param.registered.apps />
       <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
-      <param.exported.on.package />
       <param.required.addons />
       <param.release.start />
       <param.release.end />
@@ -147,32 +129,30 @@ resultsHGR/responseExp4S_x8/tiempos.png</param.exclude.filters>
       <file>${PROJECT_ROOT}</file>
     </fileset.rootdir>
     <fileset.rootfiles>
+      <file>${PROJECT_ROOT}\.git</file>
+      <file>${PROJECT_ROOT}\.gitignore</file>
+      <file>${PROJECT_ROOT}\a.txt</file>
       <file>${PROJECT_ROOT}\data</file>
       <file>${PROJECT_ROOT}\demos.xml</file>
       <file>${PROJECT_ROOT}\doc</file>
       <file>${PROJECT_ROOT}\eval_HGR_set.m</file>
       <file>${PROJECT_ROOT}\info.xml</file>
-      <file>${PROJECT_ROOT}\resources</file>
+      <file>${PROJECT_ROOT}\README.md</file>
       <file>${PROJECT_ROOT}\srcs</file>
+      <file>${PROJECT_ROOT}\toolboxImg.png</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="eval_HGRresponses.mltbx" optional="false">C:\Users\ztjona!\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses\eval_HGRresponses.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="eval_HGRresponses.mltbx" optional="false">C:\Users\z_tja\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses\eval_HGRresponses.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2020b</root>
+      <root>C:\Program Files\MATLAB\R2021b</root>
       <toolboxes>
-        <toolbox name="matlabcoder" />
         <toolbox name="neuralnetwork" />
       </toolboxes>
-      <toolbox>
-        <matlabcoder>
-          <enabled>true</enabled>
-        </matlabcoder>
-      </toolbox>
       <toolbox>
         <neuralnetwork>
           <enabled>true</enabled>
