@@ -12,3 +12,7 @@ Check the following examples to better understand the capabilities of the toolbo
 
 Advanced exampes:
 * doc/example_evalATrainingSet/evaluatingATrainingSet
+
+# Changelog
+## Version 2.5.3
+* Fixed bug regarding default gesture in eval recognition loop for dataset G11. 

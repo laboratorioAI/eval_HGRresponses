@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration build-checksum="1585905035" file="C:\Users\z_tja\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses\ToolboxPackagingConfiguration.prj" location="C:\Users\z_tja\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="3356902378" file="C:\Users\z_tja\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses\ToolboxPackagingConfiguration.prj" location="C:\Users\z_tja\OneDrive - Escuela Politécnica Nacional\PROYECTO\EMG\CEPRA\dataset\proyects\eval_HGRresponses" name="ToolboxPackagingConfiguration" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>eval_HGRresponses</param.appname>
     <param.authnamewatermark>Jonathan A. Zea</param.authnamewatermark>
     <param.email>jonathan.a.zea@ieee.org</param.email>
@@ -9,8 +9,8 @@
 Load EMG signals (view example_loadEMG).
 Evaluates a repetition (view example_evalARepetition).
 Evaluate submissions over training user group and testing user group, generate results, graphs and tex (view example_evalATrainingSet).</param.description>
-    <param.screenshot />
-    <param.version>2.5</param.version>
+    <param.screenshot>${PROJECT_ROOT}\toolboxImg.png</param.screenshot>
+    <param.version>2.5.3</param.version>
     <param.output>${PROJECT_ROOT}\eval_HGRresponses.mltbx</param.output>
     <param.products.name />
     <param.products.id />
@@ -70,7 +70,28 @@ resultsHGR/responseExp4S_x8/summary.txt
 resultsHGR/responseExp4S_x8/tiempos.fig
 resultsHGR/responseExp4S_x8/tiempos.png</param.exclude.filters>
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
-    <param.examples />
+    <param.examples>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;examples&gt;
+   &lt;exampleCategory name="doc"&gt;
+      &lt;example name="example_dataset11Gestures" type="html"&gt;
+         &lt;file type="source"&gt;/doc/html/example_dataset11Gestures.html&lt;/file&gt;
+         &lt;file type="main"&gt;/doc/example_dataset11Gestures.m&lt;/file&gt;
+         &lt;file type="thumbnail"&gt;/doc/html/example_dataset11Gestures.png&lt;/file&gt;
+         &lt;file type="image"&gt;/doc/html/example_dataset11Gestures_01.png&lt;/file&gt;
+      &lt;/example&gt;
+      &lt;example name="example_showConfusion" type="html"&gt;
+         &lt;file type="source"&gt;/doc/html/example_showConfusion.html&lt;/file&gt;
+         &lt;file type="main"&gt;/doc/example_showConfusion.m&lt;/file&gt;
+         &lt;file type="thumbnail"&gt;/doc/html/example_showConfusion.png&lt;/file&gt;
+         &lt;file type="image"&gt;/doc/html/example_showConfusion_01.png&lt;/file&gt;
+         &lt;file type="image"&gt;/doc/html/example_showConfusion_02.png&lt;/file&gt;
+         &lt;file type="image"&gt;/doc/html/example_showConfusion_03.png&lt;/file&gt;
+         &lt;file type="image"&gt;/doc/html/example_showConfusion_04.png&lt;/file&gt;
+         &lt;file type="image"&gt;/doc/html/example_showConfusion_05.png&lt;/file&gt;
+         &lt;file type="image"&gt;/doc/html/example_showConfusion_06.png&lt;/file&gt;
+      &lt;/example&gt;
+   &lt;/exampleCategory&gt;
+&lt;/examples&gt;</param.examples>
     <param.demosxml />
     <param.apps />
     <param.registered.apps />
@@ -97,14 +118,12 @@ resultsHGR/responseExp4S_x8/tiempos.png</param.exclude.filters>
     <param.additional.sw.linux.url />
     <unset>
       <param.company />
-      <param.screenshot />
       <param.output />
       <param.products.name />
       <param.products.id />
       <param.products.version />
       <param.platforms />
       <param.exclude.pcodedmfiles />
-      <param.examples />
       <param.demosxml />
       <param.apps />
       <param.registered.apps />
@@ -131,13 +150,13 @@ resultsHGR/responseExp4S_x8/tiempos.png</param.exclude.filters>
     <fileset.rootfiles>
       <file>${PROJECT_ROOT}\.git</file>
       <file>${PROJECT_ROOT}\.gitignore</file>
-      <file>${PROJECT_ROOT}\a.txt</file>
       <file>${PROJECT_ROOT}\data</file>
       <file>${PROJECT_ROOT}\demos.xml</file>
       <file>${PROJECT_ROOT}\doc</file>
       <file>${PROJECT_ROOT}\eval_HGR_set.m</file>
       <file>${PROJECT_ROOT}\info.xml</file>
       <file>${PROJECT_ROOT}\README.md</file>
+      <file>${PROJECT_ROOT}\resources</file>
       <file>${PROJECT_ROOT}\srcs</file>
       <file>${PROJECT_ROOT}\toolboxImg.png</file>
     </fileset.rootfiles>

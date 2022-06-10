@@ -137,7 +137,7 @@ privInfo = privInfo.hiddenInfo;
 % by user, by rep, etc.
 resultsFile = [options.evalResultsFolder '\' experimentName '.mat'];
 [evaluation, confusion, tiemps] = evalRecognition_loop(responses, ...
-    privInfo, userGroup, repGroup);
+    privInfo, userGroup, repGroup, options);
 
 fecha = datestr(datetime);
 save(resultsFile, 'evaluation', 'confusion', 'tiemps', 'fecha')

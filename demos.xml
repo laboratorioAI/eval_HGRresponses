@@ -9,12 +9,18 @@ Load EMG signals (view example_loadEMG).
 Evaluates a repetition (view example_evalARepetition).
 Evaluate submissions over training user group and testing user group, generate results, graphs and tex (view example_evalATrainingSet).</description>
    <demosection>
-      <label>example_evalATrainingSet</label>
+      <label>doc</label>
       <demoitem>
-         <label>evaluatingATrainingSet</label>
+         <label>example_dataset11Gestures</label>
          <type>other</type>
-         <source>evaluatingATrainingSet</source>
-         <file>doc/example_evalATrainingSet/html/evaluatingATrainingSet.html</file>
+         <source>example_dataset11Gestures</source>
+         <file>doc/html/example_dataset11Gestures.html</file>
+      </demoitem>
+      <demoitem>
+         <label>example_showConfusion</label>
+         <type>other</type>
+         <source>example_showConfusion</source>
+         <file>doc/html/example_showConfusion.html</file>
       </demoitem>
    </demosection>
 </demos>
